@@ -1,3 +1,4 @@
+import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { AuthModule } from './auth/auth.module';
@@ -19,7 +20,8 @@ import { MatListModule} from '@angular/material/list';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

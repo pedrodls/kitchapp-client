@@ -1,2 +1,30 @@
-<p>login done</p>
-<app-register></app-register>
+<div *ngIf="!hide" class="wrapper">
+  <div class="container">
+        <p class="text" >
+          kitChApp!
+        </p>
+  </div>
+  <div class="container-fluid">
+    <form class="form">
+      <div class="form-row">
+        <div class="col mb-3">
+          <i class="fas fa-user"></i>
+          <strong style="font-size: 24px; padding: 5px;">Login</strong>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col mb-3">
+          <label for="validationCustom01">Email</label>
+          <input type="email" class="form-control" id="validationCustom01" required>
+        </div>
+        <div class="col mb-3">
+          <label for="validationCustom02">Password</label>
+          <input type="password" class="form-control" id="validationCustom02" required>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Login</button>
+      <a class="btn" type="button" (click) = "hide=true">Registar-se</a>
+    </form>
+  </div>
+</div>
+<app-register *ngIf="hide"></app-register>

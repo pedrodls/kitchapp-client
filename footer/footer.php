@@ -3,7 +3,7 @@
     transition: .1s;
     width: 100%;
     height: 100%;
-    background: #2C3A47;
+    background: black;
     background-position: center;
     background-size: cover;
     color: white;

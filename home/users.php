@@ -1,6 +1,6 @@
 <?php
 include("./validate.php");
-include("../api/constants.php");
+include ("../constants.php");
 
 if (!(isset($_SESSION['email']))) {
 
@@ -30,7 +30,7 @@ if (!(isset($_SESSION['email']))) {
     <section style="position: relative; z-index: -1; padding-top: 10%;">
         <?php
 
-        $u = file_get_contents("http://localhost:3000/api/users/users.php");
+        $u = file_get_contents(API_URL);
 
         $users = array();
 

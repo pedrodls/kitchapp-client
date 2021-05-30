@@ -97,6 +97,8 @@ if ((isset($_SESSION['email']))) {
 
 <?php
 
+include ("../constants.php");
+
 $entrou = false;
 
 if (isset($_POST["logar"])) {
@@ -104,7 +106,7 @@ if (isset($_POST["logar"])) {
   $email = filter_var(htmlspecialchars($_POST['email']), FILTER_SANITIZE_STRING);
   $password = filter_var(htmlspecialchars($_POST['pwd']), FILTER_SANITIZE_STRING);
 
-  $u = file_get_contents(SITE_URL);
+  $u = file_get_contents(API_URL);
 
   $users = array();
 
